@@ -251,6 +251,7 @@ export const Navbar = ({ isLogin }) => {
             <Link className="favorites" to="favorites">즐겨찾기</Link>
           </LeftLinks>
           <RightLinks className="right-btns">
+            <Link className="location" to="location">위치 검색</Link>
             <Link className="keywords" to="keywords">키워드 검색</Link>
             <Link className="tags" to="tags">태그 검색</Link>
             {isLogin
@@ -273,6 +274,7 @@ export const Navbar = ({ isLogin }) => {
               </div>
               <Hline />
               <div className="search">
+                <Link className="location" to="location" onClick={() => setLeftMobileMenuOpen(false)}>위치 검색</Link>
                 <Link className="keywords" to="keywords" onClick={() => setLeftMobileMenuOpen(false)}>키워드 검색</Link>
                 <Link className="tags" to="tags" onClick={() => setLeftMobileMenuOpen(false)}>태그 검색</Link>
               </div>

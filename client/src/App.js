@@ -15,6 +15,7 @@ import { PostDetails } from "./pages/postDetails";
 import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
 
+import { LocationSearch } from "./pages/locationSearch";
 import { TagSearch } from "./pages/tagSearch";
 import { CommentContainer } from "./components/commentContainer";
 import { NaverCallback } from "./pages/naverCallback";
@@ -154,6 +155,7 @@ Made By 박우용, 조승호, 이상훈, 최경락`
 
           <Route path="tags" element={<TagSearch />} />
           <Route path="keywords" element={<KeywordsSearch />} />
+          <Route path="location" element={<LocationSearch />} />
 
           <Route path="mypage" element={<Mypage />} />
           <Route path="mypage/modify/" element={<ModifyMyinfo />} />
